@@ -1,0 +1,233 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 75px;
+    padding: 0px 24px;
+    background-color: #eee;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+}
+
+#nav-bar > ul {
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-bar  a {
+    color: #000;
+    text-decoration: none;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 40px;
+    padding: 12px 0;
+}
+
+#hero h2 {
+    margin-bottom: 24px;
+}
+
+#hero form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero input[type="email"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 4px 8px;
+}
+
+#hero input[type="submit"] {
+    font-weight: 700;
+    width: 100%;
+    max-width: 130px;
+    padding: 4px 8px;
+    margin-top: 12px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 8px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#features {
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    width: 100%;
+}
+
+.icon, .desc {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+.icon {
+    align-items: center;
+    font-size: 3rem;
+    width: 20%;
+    color: darkorange;
+}
+
+.desc {
+    flex-direction: column;
+    width: 80%;
+    padding: 5px;
+}
+
+#how_it_works {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+#pricing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 0 12px;
+    border: 1px solid #000;
+    border-radius: 4px;
+}
+
+.product .level {
+    font-weight: 700;
+    width: 100%;
+    padding: 16px 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #ddd;
+}
+
+.product h2 {
+    margin-top: 16px;
+}
+
+.product ul {
+    margin: 24px 0;
+}
+
+.product li {
+    margin-bottom: 12px;
+}
+
+.product button {
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 12px 24px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 4px;
+}
+
+#footer {
+    padding: 24px;
+    background-color: #ddd;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#footer li {
+    margin-left: 32px;
+}
+
+#footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+#footer span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.8;
+    margin-top: 8px;
+    color: #444;
+}
+
+.btn {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 426px) {
+    #nav-bar > ul {
+        flex-direction: column;
+    }
+
+    #hero h2 {
+        text-align: center;
+    }
+
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
